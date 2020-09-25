@@ -1,0 +1,190 @@
+body {
+  font-family: "Quicksand";
+  padding: 0px;
+  margin: 0px;
+}
+
+/* main navbar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: solid gray 1px;
+}
+
+/* for an image on a navbar */
+.navImage {
+    
+    word-wrap: unset;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+/* items in the navbar */
+.navItem {
+    width: 100%;
+    padding: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-wrap: unset;
+    text-align: center;
+}
+.navItem:hover {
+    background-color: #a6cbeb;
+    cursor: pointer;
+}
+
+/* a active nav item */
+.active {
+    background-color:#bababa;
+}
+
+/* moves a flexbox as far to the right as possible */
+.flexAlignRight {
+    margin-left: auto;
+}
+
+/* bottom copyright */
+.copyright {
+    text-align: center;
+}
+
+/* for main full screen content */
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* for main header */
+.mainHeader {
+    width: 100%;
+    text-align: center;
+}
+
+/* mainImageContainer */
+.mainImageContainer {
+    width: 100%;
+    min-height: 60vw;
+    background-image: url("../images/delorean.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+}
+
+/* mainItemDetails */
+.mainItemDetails {
+    width: 130px;
+    margin: 20px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 8vw;
+    color: #4c96d7;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+}
+
+
+
+/* Button! */
+.btn {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #4c96d7;
+    color: white;
+}
+
+.itemDetailContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemOptionsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.itemDetailHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.productInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productUpgrade {
+    width: 50%;
+    text-align: center;
+    background-color: #4c96d7;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.productUpgrade:hover {
+    background-color: #a6cbeb;
+    cursor: pointer;
+}
+
+.wrapController {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.upgradeName {
+    color: white;
+    padding: 5px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reviewItem {
+    margin: 15px;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: solid gray 1px;
+      }
+      
+      .navItem {
+          width: initial;
+          padding: 18px;
+          padding-left: 17px;
+          padding-right: 17px;
+          word-wrap: unset;
+      }
+
+      .wrapController {
+          flex-wrap: nowrap;
+      }
+
+      
+}
