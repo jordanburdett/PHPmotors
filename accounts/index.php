@@ -1,6 +1,8 @@
 <?php
-require_once 'library/connections.php';
-require_once "model/main-model.php";
+// Accounts controller
+
+require_once '../library/connections.php';
+require_once "../model/main-model.php";
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
@@ -17,19 +19,14 @@ foreach ($classifications as $classification) {
   $navList .= "<li class='navItem'><a href='/phpMotors/index.php?action=".urlencode($classification['classificationName'])."' title='View our $classification[classificationName] product line'>$classification[classificationName]</a></li>";
 }
 
-switch ($action){
-    case 'something':
-    break;
-    case $action === "template":
-      include 'view/template.php';
-    break;
-
-    // Test the navbar
-    case $action === "navListTest":
-      echo $navList;
-    break;
-    case $action === "home":
-    default:
-     include 'view/home.php';
+switch ($action) {
+  case $action == "register":
+    include "./registration.php";
   break;
-   }
+  case $action == "login":
+    include "./login.php";
+  break;
+  default:
+  
+break;
+ }

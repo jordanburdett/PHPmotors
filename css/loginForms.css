@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+}
+
+.inputContainer {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input,
+label {
+  width: 100%;
+  padding: 13px;
+}
+
+form input {
+  border: solid rgb(102, 102, 102) 0.5px;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #4c96d7;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 13px;
+  border-radius: 10px;
+  font-family: "Quicksand";
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: rgb(252, 103, 103);
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
